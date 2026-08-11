@@ -1,0 +1,481 @@
+/* ========================================
+   ROOT
+======================================== */
+
+:root {
+    --yoga-green: #6f8065;
+    --yoga-dark: #344238;
+    --yoga-beige: #f5f1e9;
+    --yoga-light: #faf9f6;
+    --yoga-brown: #8d7b68;
+
+    --text-main: #3f4641;
+    --text-muted: #697069;
+
+    --radius-lg: 20px;
+}
+
+
+/* ========================================
+   BASE
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    color: var(--text-main);
+    background: var(--yoga-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+.brand-font {
+    font-family: "Playfair Display", serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    background: rgba(250, 249, 246, 0.96);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    color: var(--yoga-dark);
+}
+
+.navbar-brand:hover {
+    color: var(--yoga-green);
+}
+
+.nav-link {
+    color: #505850;
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: var(--yoga-green);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(245, 241, 233, 0.98) 0%,
+            rgba(245, 241, 233, 0.88) 45%,
+            rgba(245, 241, 233, 0.15) 100%
+        ),
+        url("../images/hero.jpg")
+        center / cover no-repeat;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-subtitle {
+    color: var(--yoga-green);
+
+    letter-spacing: 3px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    line-height: 1.08;
+
+    color: var(--yoga-dark);
+}
+
+.hero p {
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #5f665f;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn-yoga {
+    background: var(--yoga-green);
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.btn-yoga:hover {
+    background: var(--yoga-dark);
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+.btn-outline-yoga {
+    border: 1px solid var(--yoga-green);
+
+    color: var(--yoga-green);
+
+    padding: 12px 28px;
+
+    border-radius: 50px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.btn-outline-yoga:hover {
+    background: var(--yoga-green);
+
+    color: white;
+}
+
+
+/* ========================================
+   COMMON SECTION
+======================================== */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.7rem;
+
+    color: var(--yoga-dark);
+}
+
+.section-subtitle {
+    color: var(--yoga-green);
+
+    letter-spacing: 2px;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about-image {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+}
+
+.about-text {
+    line-height: 2;
+
+    color: var(--text-muted);
+}
+
+
+/* ========================================
+   PROGRAM CARDS
+======================================== */
+
+.class-card {
+    border: none;
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    background: white;
+
+    height: 100%;
+
+    box-shadow:
+        0 8px 30px rgba(50, 60, 50, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 40px rgba(50, 60, 50, 0.10);
+}
+
+.class-card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.class-card .card-body {
+    padding: 28px;
+}
+
+.class-card h3 {
+    color: var(--yoga-dark);
+}
+
+.class-card p {
+    color: #777f78;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   SCHEDULE
+======================================== */
+
+.schedule-section {
+    background: var(--yoga-beige);
+}
+
+.schedule-table {
+    background: white;
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(50, 60, 50, 0.05);
+}
+
+.schedule-table th {
+    background: var(--yoga-green);
+
+    color: white;
+
+    font-weight: 500;
+
+    padding: 16px;
+}
+
+.schedule-table td {
+    padding: 16px;
+
+    vertical-align: middle;
+}
+
+
+/* ========================================
+   TEACHER
+======================================== */
+
+.teacher-img {
+    width: 260px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* ========================================
+   PRICE
+======================================== */
+
+.price-card {
+    background: white;
+
+    border-radius: var(--radius-lg);
+
+    padding: 40px 30px;
+
+    height: 100%;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 30px rgba(50, 60, 50, 0.06);
+
+    transition:
+        transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+.price-card.featured {
+    background: var(--yoga-dark);
+
+    color: white;
+
+    transform: translateY(-10px);
+}
+
+.price-card.featured:hover {
+    transform: translateY(-15px);
+}
+
+.price {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.7rem;
+
+    margin: 20px 0;
+}
+
+.price-card ul {
+    list-style: none;
+
+    padding: 0;
+
+    line-height: 2.4;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact-section {
+    background: var(--yoga-dark);
+
+    color: white;
+}
+
+.contact-section .section-title {
+    color: white;
+}
+
+.contact-info {
+    color: #d9dfd8;
+
+    line-height: 2;
+}
+
+.contact-form {
+    background: white;
+
+    color: var(--text-main);
+
+    border-radius: var(--radius-lg);
+
+    padding: 40px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    background: #27322b;
+
+    color: #c9d0ca;
+
+    padding: 35px 0;
+}
+
+.site-footer h3 {
+    color: white;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 650px;
+
+        background:
+            linear-gradient(
+                rgba(245, 241, 233, 0.88),
+                rgba(245, 241, 233, 0.94)
+            ),
+            url("../images/hero.jpg")
+            center / cover no-repeat;
+    }
+
+
+    .section {
+        padding: 70px 0;
+    }
+
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+
+    .about-image {
+        height: 350px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .price-card.featured {
+        transform: none;
+    }
+
+
+    .price-card.featured:hover {
+        transform: translateY(-5px);
+    }
+
+
+    .contact-form {
+        padding: 30px 25px;
+    }
+
+}
