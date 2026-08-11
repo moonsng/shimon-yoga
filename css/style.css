@@ -220,11 +220,16 @@ img {
     width: 100%;
     max-width: 420px;
     height: 420px;
+
     display: block;
     margin: 0 auto;
+
     object-fit: contain;
+
     padding: 40px;
+
     background: var(--yoga-beige);
+
     border-radius: var(--radius-lg);
 }
 
