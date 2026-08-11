@@ -204,12 +204,31 @@ img {
    ABOUT
 ======================================== */
 
+/*
 .about-image {
     width: 100%;
 
     height: 500px;
 
     object-fit: cover;
+
+    border-radius: var(--radius-lg);
+}
+*/
+
+.about-image {
+    width: 100%;
+    max-width: 420px;
+    height: 420px;
+
+    display: block;
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    padding: 40px;
+
+    background: var(--yoga-beige);
 
     border-radius: var(--radius-lg);
 }
@@ -400,6 +419,16 @@ img {
     line-height: 2;
 }
 
+.contact-info .contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-info .contact-link:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .contact-form {
     background: white;
 
@@ -462,6 +491,7 @@ img {
 
         margin-bottom: 35px;
     }
+    
 
 
     .price-card.featured {
